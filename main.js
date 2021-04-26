@@ -30,7 +30,10 @@ const button = document.getElementById("best-button");
 // console.log(button);
 
 // - Listen to click events on the button
-// - Handle the click event (pass a function)
-button.addEventListener("click", () => {
-  console.log("HANDLE IT!");
+// - Handle the click event (pass a function as event handler)
+button.addEventListener("click", (event) => {
+  console.log("HANDLE IT!", event);
+  const header = document.getElementById("bigTitle");
+  console.log(header);
+  header.innerText = "JavaScript rules everything around me";
 });
