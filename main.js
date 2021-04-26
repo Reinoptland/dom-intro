@@ -13,7 +13,7 @@ console.log("Color", header.className);
 header.textContent = "YOU GOT HACKED";
 
 // calling methods on elements
-header.remove();
+// header.remove();
 
 // creating new elements from scratch
 const newText = document.createElement("p");
@@ -21,3 +21,16 @@ newText.textContent = "I AM A NEW PARAGRAPH!";
 // and appending them
 document.body.appendChild(newText);
 console.log(newText);
+
+// Responding to events
+// - Select the button
+// 1. Add id to the button (html)
+// 2. select the button
+const button = document.getElementById("best-button");
+// console.log(button);
+
+// - Listen to click events on the button
+// - Handle the click event (pass a function)
+button.addEventListener("click", () => {
+  console.log("HANDLE IT!");
+});
